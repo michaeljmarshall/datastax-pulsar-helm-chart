@@ -1835,6 +1835,11 @@ grafanaDashboards:
   enabled: false
   # namespaceOverride: monitoring
 
+# Deploy Prometheus Operator ServiceMonitors and PodMonitors for Pulsar components
+# This is disabled by default for now because we enable monitoring via helm
+#
+enableServiceAndPodMonitors: false
+
 # Deploy the kube-prometheus-stack which includes:
 # * Prometheus (using Prometheus Operator)
 # * Alertmanager (using Prometheus Operator)
